@@ -26,5 +26,3 @@ function formatarProdutos(json) {
 }
 
 console.log(formatarProdutos(produtosJSON));
-
-
