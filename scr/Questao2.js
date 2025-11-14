@@ -1,5 +1,4 @@
-const texto =
-  "JavaScript é uma linguagem de programação. JavaScript é versátil e JavaScript é poderoso.";
+const texto = "JavaScript é uma linguagem de programação. JavaScript é versátil e JavaScript é poderoso.";
 
 function analisarTexto(texto) {
   const palavras = texto.replace(/[.,!?]/g, "").split(" ");
@@ -10,7 +9,7 @@ function analisarTexto(texto) {
     frasep[palavra] = (frasep[palavra] || 0) + 1;
   });
 
-  const frequenciaPalavras = Object.keys(contagem).map(palavra => ({
+  const frequenciaPalavras = Object.keys(frasep).map(palavra => ({
     palavra: palavra,
     frequencia: frasep[palavra]
   }));
@@ -23,5 +22,6 @@ function analisarTexto(texto) {
     tamanhoMedioPalavras: Number(tamanhoMedioPalavras.toFixed(2))
   };
 }
+
 
 console.log(analisarTexto(texto));
