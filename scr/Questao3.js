@@ -4,8 +4,8 @@ const usuariosJSON = `[
   {"nome": "João Santos", "email": "joao@email.com", "idade": "17"}
 ]`;
 
-function normalizarUsuarios(json) {
-  const usuarios = JSON.parse(json);
+function normalizarUsuarios(dados) {
+  const usuarios = JSON.parse(dados);
 
   return usuarios.map(usuario => {
 
@@ -31,5 +31,6 @@ function normalizarUsuarios(json) {
     };
   });
 }
+
 
 console.log(normalizarUsuarios(usuariosJSON));
